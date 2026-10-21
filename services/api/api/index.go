@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	store "github.com/adeyanjufuhad/forme-store/services/api/internal/store"
+	store "github.com/adeyanjufuhad/forme-store/services/api/pkg/store"
 )
 
 var instance struct {
