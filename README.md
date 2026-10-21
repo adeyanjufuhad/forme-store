@@ -87,8 +87,6 @@ This project demonstrates design and engineering; it is intentionally not moneti
 
 Deploy two projects from this repository on Vercel: `apps/web` with the Next.js preset, and `services/api` with the Other preset. The Go function in `api/index.go` reuses the same tested service as the CLI. Set the frontend's server-only `API_INTERNAL_URL` to the Go deployment URL. Set the API's `WEB_ORIGIN` to the exact frontend URL and add `DATABASE_URL` as a sensitive environment variable. The API Dockerfile also supports conventional Go hosts.
 
-To explicitly refresh the portfolio catalog from `catalog.json`, run `go run ./cmd/server -refresh-catalog` with the database environment loaded. This updates the eight demo products; ordinary `-seed` remains non-overwriting.
+To explicitly refresh the portfolio catalog from `services/api/internal/store/catalog.json`, run `go run ./cmd/server -refresh-catalog` with the database environment loaded. This updates the eight demo products; ordinary `-seed` remains non-overwriting.
 
 See `IMAGE_SOURCES.md`, `THIRD_PARTY_NOTICES.md`, and `licenses/react-bits.txt` for asset and component attribution.
-
-
