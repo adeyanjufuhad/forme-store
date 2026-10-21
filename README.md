@@ -1,5 +1,7 @@
 # FORME
 
+[Live portfolio](https://forme-store-portfolio.vercel.app) · [Commit history](https://github.com/adeyanjufuhad/forme-store/commits/main)
+
 A non-commercial portfolio concept by Fuhad Adeyanju: a flat, minimalist clothing and footwear storefront with Next.js, a Go HTTP API, and Neon Postgres. Pumpkin `#FE7F2D`, charcoal `#233D4D`, warm paper, bold editorial type, and the supplied campaign photograph. Nothing is sold, charged, or shipped.
 
 ## What's built
