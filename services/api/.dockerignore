@@ -1,0 +1,5 @@
+.env
+.env.*
+*.log
+*.exe
+.cache

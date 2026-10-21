@@ -1,0 +1,135 @@
+[
+  {
+    "id": "daily-hoodie",
+    "name": "The Daily Hoodie",
+    "category": "Clothing",
+    "description": "A little room. A lot of comfort.",
+    "detail": "Easy volume, a soft neutral palette, and a hood that finishes the silhouette. Style it with charcoal trousers and a warm-toned sneaker. A fictional piece in the FORME portfolio collection.",
+    "color": "Sand",
+    "image": "/images/hoodie.jpg",
+    "prices": {
+      "NGN": 7800000,
+      "USD": 6800
+    },
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "stock": 36,
+    "tag": "THE EVERYDAY EDIT",
+    "position": 1
+  },
+  {
+    "id": "court-high",
+    "name": "Canvas High 01",
+    "category": "Footwear",
+    "description": "Your everyday, from the ground up.",
+    "detail": "A high-top canvas silhouette with a warm brown upper and a contrasting light sole. Give the ankle some space with a shorter hem, or let a relaxed trouser sit over the top. Styling imagery is used for this fictional portfolio collection.",
+    "color": "Warm Brown / Cream",
+    "image": "/images/high-top.jpg",
+    "prices": {
+      "NGN": 12500000,
+      "USD": 11000
+    },
+    "sizes": ["EU 39", "EU 40", "EU 41", "EU 42", "EU 43", "EU 44", "EU 45"],
+    "stock": 24,
+    "tag": "NEW ARRIVAL",
+    "position": 2
+  },
+  {
+    "id": "relaxed-trouser",
+    "name": "The Relaxed Trouser",
+    "category": "Clothing",
+    "description": "An easy fit, with somewhere to go.",
+    "detail": "An easy, dark trouser with room through the leg. Balance the silhouette with a fitted tee, or lean into volume with a relaxed hoodie. A fictional piece in the FORME portfolio collection.",
+    "color": "Charcoal",
+    "image": "/images/pants.jpg",
+    "prices": {
+      "NGN": 6500000,
+      "USD": 5600
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "stock": 30,
+    "position": 3
+  },
+  {
+    "id": "studio-cap",
+    "name": "The Studio Cap",
+    "category": "Accessories",
+    "description": "The finishing touch. Every time.",
+    "detail": "A quiet finishing touch in a washed neutral tone. Pair it with sand, charcoal, or a single warm accent. A fictional accessory in the FORME portfolio collection; the photograph is an editorial styling reference.",
+    "color": "Washed Stone",
+    "image": "/images/cap.jpg",
+    "prices": {
+      "NGN": 2800000,
+      "USD": 2400
+    },
+    "sizes": ["One size"],
+    "stock": 48,
+    "position": 4
+  },
+  {
+    "id": "orange-hoodie",
+    "name": "The Weekend Hoodie",
+    "category": "Clothing",
+    "description": "The same comfort. A brighter mood.",
+    "detail": "A familiar shape, in the signature pumpkin mood. Let the color be the focal point and keep everything else easy. A fictional piece in the FORME portfolio collection.",
+    "color": "Pumpkin",
+    "image": "/images/orange-hoodie.jpg",
+    "prices": {
+      "NGN": 8200000,
+      "USD": 7200
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "stock": 18,
+    "tag": "SIGNATURE COLOR",
+    "position": 5
+  },
+  {
+    "id": "court-low",
+    "name": "The Everyday Low",
+    "category": "Footwear",
+    "description": "Keep things grounded.",
+    "detail": "A low-profile sneaker in warm brown with a lighter sole. An easy finishing point for neutrals, relaxed trousers, and off-duty layers. A fictional piece in the FORME portfolio collection.",
+    "color": "Warm Brown / White",
+    "image": "/images/low-top.jpg",
+    "prices": {
+      "NGN": 10800000,
+      "USD": 9400
+    },
+    "sizes": ["EU 39", "EU 40", "EU 41", "EU 42", "EU 43", "EU 44"],
+    "stock": 22,
+    "position": 6
+  },
+  {
+    "id": "city-layer",
+    "name": "The City Layer",
+    "category": "Clothing",
+    "description": "A sharper line. The same easy feeling.",
+    "detail": "Soft tailoring meets the everyday wardrobe. Wear a sand-colored outer layer over a quiet base, then finish with your favorite sneakers. This is a fictional portfolio product with editorial styling imagery.",
+    "color": "Sand",
+    "image": "/images/city-look.jpg",
+    "prices": {
+      "NGN": 14800000,
+      "USD": 12800
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 16,
+    "tag": "CITY ROTATION",
+    "position": 7
+  },
+  {
+    "id": "afterhours-set",
+    "name": "The Afterhours Set",
+    "category": "Clothing",
+    "description": "For days that turn into nights.",
+    "detail": "A coordinated utility-inspired silhouette in a warm rust tone. Wear it together for a strong outline, or separate the layers and bring them into the rest of your rotation. This is a fictional portfolio product with editorial styling imagery.",
+    "color": "Rust",
+    "image": "/images/utility.jpg",
+    "prices": {
+      "NGN": 16500000,
+      "USD": 14500
+    },
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 14,
+    "tag": "THE EDIT / 02",
+    "position": 8
+  }
+]

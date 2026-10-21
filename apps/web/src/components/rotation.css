@@ -1,0 +1,186 @@
+.rotation-section {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 70px;
+  padding-top: 10px;
+  padding-bottom: 90px;
+}
+.rotation-copy {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 140px;
+}
+.rotation-copy > .eyebrow,
+.rotation-copy > h2,
+.rotation-copy > p,
+.mood-tabs {
+  position: relative;
+  z-index: 1;
+}
+.rotation-copy h2 {
+  font-size: 62px;
+  line-height: 1.02;
+  margin-top: 20px;
+}
+.rotation-copy > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #62727a;
+  margin: 25px 0 30px;
+}
+.mood-tabs {
+  border-top: 1px solid var(--rule);
+  max-width: 440px;
+}
+.mood-tabs button {
+  display: grid;
+  grid-template-columns: 35px 1fr 28px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding: 20px 0;
+  gap: 15px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 17px;
+  letter-spacing: -0.04em;
+}
+.mood-tabs button > span:last-child {
+  text-align: right;
+  font-size: 25px;
+  transition: transform 0.3s;
+}
+.mood-tabs button[aria-selected="true"] {
+  color: #9b4712;
+}
+.mood-tabs button[aria-selected="true"] > span:last-child {
+  transform: rotate(45deg);
+}
+.mood-tabs button:hover {
+  background: #fe7f2d10;
+}
+.mood-tabs button .eyebrow {
+  font-size: 9px;
+}
+.rotation-panel {
+  min-width: 0;
+}
+.rotation-image {
+  position: relative;
+  aspect-ratio: 1/1.06;
+  overflow: hidden;
+  background: var(--surface);
+}
+.rotation-photo {
+  position: absolute;
+  inset: 0;
+}
+.rotation-photo img {
+  object-fit: cover;
+}
+.rotation-image-label {
+  position: absolute;
+  bottom: 17px;
+  left: 17px;
+  background: var(--paper);
+  padding: 9px 11px;
+  font-size: 8px;
+  z-index: 1;
+  max-width: calc(100% - 34px);
+}
+.rotation-number {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  font-weight: 650;
+  font-size: 58px;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  background: var(--orange);
+  padding: 4px 10px 6px;
+}
+.rotation-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  padding-top: 25px;
+}
+.rotation-details > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #62727a;
+}
+.rotation-details nav {
+  display: grid;
+  gap: 4px;
+}
+.rotation-details nav a {
+  font-size: 11px;
+  min-height: 35px;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.rotation-details nav a:hover {
+  color: #9b4712;
+}
+.rotation-details nav a span {
+  font-size: 17px;
+}
+@media (max-width: 1100px) {
+  .rotation-section {
+    gap: 40px;
+  }
+  .rotation-copy h2 {
+    font-size: 52px;
+  }
+  .rotation-details {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .rotation-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
+  .rotation-copy {
+    padding-bottom: 20px;
+  }
+  .rotation-copy h2 {
+    font-size: 44px;
+  }
+  .rotation-copy > p {
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .mood-tabs {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .mood-tabs button {
+    font-size: 16px;
+    padding: 16px 0;
+  }
+  .kinetic-rotation {
+    display: none;
+  }
+  .rotation-image {
+    aspect-ratio: 1/1.05;
+  }
+  .rotation-details {
+    gap: 20px;
+  }
+  .rotation-details nav a {
+    min-height: 44px;
+    font-size: 10px;
+  }
+  .rotation-details > p {
+    font-size: 11px;
+  }
+  .rotation-number {
+    font-size: 48px;
+  }
+}

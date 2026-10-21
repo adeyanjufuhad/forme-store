@@ -1,0 +1,192 @@
+.kinetic-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  color: var(--ink);
+}
+.kinetic-shapes > span {
+  position: absolute;
+  display: block;
+}
+.kinetic-star svg {
+  width: 100%;
+  height: 100%;
+}
+.kinetic-star {
+  width: 70px;
+  height: 70px;
+  right: 7%;
+  top: 15%;
+  animation: shape-turn 24s linear infinite;
+}
+.kinetic-ring {
+  width: 110px;
+  height: 110px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  right: 5%;
+  bottom: 22%;
+  animation: shape-drift 7s ease-in-out infinite alternate;
+}
+.kinetic-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: currentColor;
+  right: 22%;
+  bottom: 20%;
+  animation: shape-dot-orbit 9s ease-in-out infinite;
+}
+.kinetic-checker {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  width: 32px;
+  height: 32px;
+  right: 18%;
+  top: 46%;
+  animation: shape-rock 6s ease-in-out infinite alternate;
+}
+.kinetic-checker i:first-child,
+.kinetic-checker i:last-child {
+  background: currentColor;
+}
+.kinetic-hero .kinetic-ring {
+  opacity: 0.45;
+}
+.kinetic-hero .kinetic-checker {
+  opacity: 0.6;
+}
+.kinetic-photo {
+  z-index: 1;
+  color: var(--orange);
+}
+.kinetic-photo .kinetic-star {
+  left: 9%;
+  right: auto;
+  top: 11%;
+  width: 57px;
+  height: 57px;
+  animation-direction: reverse;
+}
+.kinetic-photo .kinetic-ring {
+  right: 6%;
+  bottom: 19%;
+  width: 85px;
+  height: 85px;
+  animation-delay: -3s;
+}
+.kinetic-photo .kinetic-dot {
+  right: 11%;
+  top: 44%;
+  width: 15px;
+  height: 15px;
+  animation-delay: -4s;
+}
+.kinetic-photo .kinetic-checker {
+  display: none !important;
+}
+.kinetic-rotation {
+  color: var(--orange);
+}
+.kinetic-rotation .kinetic-star {
+  width: 85px;
+  height: 85px;
+  right: 16%;
+  top: auto;
+  bottom: 35px;
+}
+.kinetic-rotation .kinetic-ring {
+  right: 1%;
+  bottom: 15px;
+  width: 48px;
+  height: 48px;
+  animation-delay: -3s;
+}
+.kinetic-rotation .kinetic-dot {
+  right: 37%;
+  bottom: 50px;
+  animation-delay: -2s;
+}
+.kinetic-rotation .kinetic-checker {
+  display: none !important;
+}
+@keyframes shape-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape-drift {
+  from {
+    transform: translate(-7px, 12px) scale(0.92);
+  }
+  to {
+    transform: translate(15px, -14px) scale(1.08);
+  }
+}
+@keyframes shape-dot-orbit {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -16px);
+  }
+  50% {
+    transform: translate(7px, -34px);
+  }
+  75% {
+    transform: translate(-15px, -12px);
+  }
+}
+@keyframes shape-rock {
+  from {
+    transform: rotate(-14deg) translateY(-5px);
+  }
+  to {
+    transform: rotate(25deg) translateY(8px);
+  }
+}
+@media (max-width: 767px) {
+  .kinetic-hero .kinetic-star {
+    width: 48px;
+    height: 48px;
+    right: 9%;
+    top: 20%;
+  }
+  .kinetic-hero .kinetic-ring {
+    width: 75px;
+    height: 75px;
+    bottom: 26%;
+  }
+  .kinetic-hero .kinetic-checker {
+    width: 24px;
+    height: 24px;
+    right: 14%;
+    top: 55%;
+  }
+  .kinetic-photo .kinetic-star {
+    width: 44px;
+    height: 44px;
+  }
+  .kinetic-photo .kinetic-ring {
+    width: 65px;
+    height: 65px;
+  }
+  .kinetic-rotation .kinetic-star {
+    width: 55px;
+    height: 55px;
+    bottom: 23px;
+    right: 8%;
+  }
+  .kinetic-rotation .kinetic-ring,
+  .kinetic-rotation .kinetic-dot {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kinetic-shapes > span {
+    animation: none !important;
+  }
+}
